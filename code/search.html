@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        #search-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #search-bar {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        #search-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Search Bar</h1>
+    </header>
+
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search...">
+        <button id="search-button" onclick="search()">Search</button>
+    </div>
+
+    <script>
+        function search() {
+            const searchTerm = document.getElementById('search-bar').value;
+            // Implement the logic to perform the search
+            alert(`Search performed for: ${searchTerm}`);
+        }
+    </script>
+
+</body>
+</html>
